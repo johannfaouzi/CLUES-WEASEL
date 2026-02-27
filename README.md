@@ -2,7 +2,7 @@
 
 This repository accompanies the following paper:
 
-> Johann Faouzi.
+> Johann Faouzi. CLUES-WEASEL: No additional clues required to choose your time series clustering algorithm. 2026. [⟨hal-05524160⟩](https://hal.science/hal-05524160v1)
 
 
 ## Presentation
@@ -11,9 +11,9 @@ This repository accompanies the following paper:
 
 The figure above summarizes the architecture of CLUES-WEASEL.
 The architecture has 5 steps:
-* The unsupervised version of thetransformation step of [WEASEL 2.0](https://link.springer.com/article/10.1007/s10994-023-06395-w) is used to extract features.
-* Potential constant features are removed and the remaining features are standardized (zero mean, unit variance).
-* Principal component analysis is performed to reduce the dimensionality. The number of components is the minimum one such that the total explained variance ratio is above 20%.
+* The unsupervised version of the transformation step of [WEASEL 2.0](https://link.springer.com/article/10.1007/s10994-023-06395-w) is used to extract features.
+* Potential constant features are removed, and the remaining features are standardized (zero mean, unit variance).
+* Principal component analysis (PCA) is performed to reduce the dimensionality. The number of components is the minimum one such that the total explained variance ratio is above 20%.
 * $k$-means is applied on these reduced extracted features to predict the clusters.
 
 
@@ -69,6 +69,6 @@ All the credits for these results should go to the corresponding authors, notabl
 
 If you use CLUES-WEASEL in a scientific publication, the following citation in your publication would be appreciated:
 
->
+> Johann Faouzi. CLUES-WEASEL: No additional clues required to choose your time series clustering algorithm. 2026. [⟨hal-05524160⟩](https://hal.science/hal-05524160v1)
 
 This citation will be updated when the paper is a published in a peer-reviewed journal or conference.
